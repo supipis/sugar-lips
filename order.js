@@ -4,5 +4,5 @@ $(document).ready(function(){
         var targetBox = $("." + inputValue); // select element with inputValue as class
         $(".box").not(targetBox).hide(); //hide all other elements
         $(targetBox).show(); //make sure to show the element
-    });
+    });//hello
 });

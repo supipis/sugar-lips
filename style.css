@@ -36,7 +36,7 @@
     font-size: 18px; 
     border: none;
     outline: none;
-    color: #00c2d4;
+    color: black;
     font-weight: bold;
     padding: 14px 16px;
     background-color: inherit;
@@ -46,7 +46,7 @@
   
   /* Add a red background color to navigation links on hover */
   .navbar a:hover, .subnav:hover .subnavbtn {
-    background-color: #fbf4d7;
+    background-color: #c7fceb;
   }
   
   /* Style the subnav content - positioned absolute */
@@ -54,14 +54,14 @@
     display: none;
     position: absolute;
     width: auto;
-    background-color: #fbf4df;
+    background-color: #c7fceb;
     z-index: 1;
   }
   
   /* Style the subnav links */
   .subnav-content a {
     float: left;
-    color: #00c2d4;
+    color: black;
     text-decoration: none;
   }
   
@@ -80,43 +80,52 @@ body{
     background-color: #c7fceb;
 }
 
-main {
-    display: grid;
-    grid-template-columns: 250px 250px;
-    grid-template-rows: repeat(2, 450px);
-    background-color: red;
-    margin-top: 44px;
-    
-    justify-items: center;
-    justify-content: center;
-    align-content: center;
-    
+
+  .shop{
     background-image: url("myshop.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    padding: 50% 15% 10% 15%;
+  }
 
+  .block-container{
+    display: grid;
+    grid-template-columns: 250px 250px;
+    grid-template-rows: repeat(2, 350px);
     
   }
 
   main img {
-    margin-top: 330px;
-    width: 100%;
+    
+    width: 70%;
     height: auto;
+    background-color: red;
+  
   }
 
   a :hover{
     color: #d669c0;
     animation: .8s shake infinite alternate;
   }
+
+  .image-block{
+    background-color: green;
+    border: 2px solid red;
+    
+    text-align: center;
+  }
   
 
   h3{
-      font-family: "Playfair Display";
-      color: #00c2d4;
+      font-family: cursive;
+      color: #d669c0;
       font-size: 30px;
       text-align: center;
-      
+      font-weight: bold;  
+      margin-bottom: -25px;
+      margin-top: 15px;
+       
   }
   @keyframes shake {
     0% { transform: skewX(-15deg); }
@@ -131,6 +140,8 @@ main {
       font-family: "Playfair Display";
       font-size: 20px;
       color: #212221;
+      line-height: 120%;
+      padding: 20px;
   }
 
   main .first-letter{
@@ -155,10 +166,12 @@ main {
     text-align: center;
   }
 
-  .description p{
+  .description p{ /*welcome to sg-lips*/
       font-family: 'Playfair Display', Serif;
       font-size: 30px;
       text-align: center;
+      padding: 10px;
+      color: #510045;
       
   }
 
@@ -182,8 +195,12 @@ main {
     float: left;
 }
 
-.logo-container{
+.logo-container{ /*SUGAR-LIPS logo*/
     padding: 20px;
+}
+
+footer{
+  padding: 10px;
 }
 
 h4{
@@ -194,7 +211,8 @@ h4{
 
  footer ul{
     font-family: "Playfair Display";
-    font-size: 25px;  
+    font-size: 25px; 
+    color: #510045; 
 }
 
 .social-media a{
@@ -328,6 +346,10 @@ h4{
   margin-top: 30px;
 }
 
+#title h2{
+    font-family: 'Playfair Display', Serif !important; 
+}
+
 
 /*gallery-cake*/
 
@@ -362,6 +384,7 @@ h5{
   padding: 20px;
   text-align: center;
   font-size: 20px;
+  border: solid 3px #d669c0;
 }
 
 .ui-timepicker{
@@ -369,7 +392,7 @@ h5{
 }
 
 input[type=submit]{
-  background-color: #ffd3da;
+  background-color: #d669c0;
   padding: 12px 20px;
   border-radius: 4px;
   cursor: pointer;

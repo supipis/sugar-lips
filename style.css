@@ -1,241 +1,327 @@
-
 /* The navigation menu */
+
 .navbar {
-    overflow: hidden;
-    border: 2px solid #ffbeef;
-    border-radius: 5px;
-    
-  }
-  
-  .navbar{
-      margin-bottom: 40px;
-      display: flex;
-      justify-content: space-around;
-  }
-
-  /* Navigation links */
-  .navbar a {
-    float: left;
-    font-size: 18px;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    Font-Family: 'Lora', Serif;
-    font-weight: bold; 
-  }
-  
-  /* The subnavigation menu */
-  .subnav {
-    float: left;
-    overflow: hidden;
-  }
-  
-  /* Subnav button */
-  .subnav .subnavbtn {
-    font-size: 18px; 
-    border: none;
-    outline: none;
-    color: black;
-    font-weight: bold;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: 'Lora', Serif;
-    margin: 0;
-  }
-  
-  /* Add a red background color to navigation links on hover */
-  .navbar a:hover, .subnav:hover .subnavbtn {
-    background-color: #c7fceb;
-  }
-  
-  /* Style the subnav content - positioned absolute */
-  .subnav-content {
-    display: none;
-    position: absolute;
-    width: auto;
-    background-color: #c7fceb;
-    z-index: 1;
-  }
-  
-  /* Style the subnav links */
-  .subnav-content a {
-    float: left;
-    color: black;
-    text-decoration: none;
-  }
-  
-  /* Add a grey background color on hover */
-  .subnav-content a:hover {
-    background-color: #ffaaea;
-    color: black;
-  }
-  
-  /* When you move the mouse over the subnav container, open the subnav content */
-  .subnav:hover .subnav-content {
-    display: block;
-  }
-
-body{
-    background-color: #c7fceb;
+  overflow: hidden;
+  border-radius: 5px;
+  justify-content: space-around;
+  max-width: 50em;
+  display: inline-block;
 }
 
+.nav-container {
+  background-color: #A3E3D7;
+  text-align: center;
+}
 
-  .shop{
-    background-image: url("myshop.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 50% 15% 10% 15%;
+/* Navigation links */
+
+.navbar a {
+  float: left;
+  font-size: 20px;
+  color: #834487;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 500;
+}
+
+/* The subnavigation menu */
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+/* Subnav button */
+
+.subnav .subnavbtn {
+  font-size: 20px;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  color: #834487;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+}
+
+/* Add a red background color to navigation links on hover */
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: #FFC8CF;
+}
+
+/* Style the subnav content - positioned absolute */
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  width: auto;
+  background-color: #79FFE7;
+  z-index: 1;
+}
+
+/* Style the subnav links */
+
+.subnav-content a {
+  float: left;
+  color: #834487;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* Add a grey background color on hover */
+
+.subnav-content a:hover {
+  background-color: #FFC8CF;
+}
+
+/* When you move the mouse over the subnav container, open the subnav content */
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+
+.candy-pole {
+  background-image: url("pole.png");
+  box-sizing: border-box;
+  height: 9px;
+  background-size: contain;
+}
+
+body {
+  background-color: #FFC8CF;
+  font-family: "Playfair Display";
+  color: #3C3C3C;
+  margin: auto;
+}
+
+.shop {
+  background-image: url("myshop.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 50% 15% 20% 15%;
+  margin: auto;
+}
+
+.shop p {
+  color: #3C3C3C
+}
+
+.services h2 {
+  display: none;
+}
+
+.block-container {
+  display: grid;
+  grid-template-columns: 250px 250px;
+  grid-template-rows: repeat(2, 255px);
+}
+
+.block-container img {
+  width: 50%;
+  height: auto;
+  margin-bottom: -20px;
+  /* background-color: red; */
+}
+
+a :hover {
+  color: #d669c0;
+  animation: .8s shake infinite alternate;
+}
+
+.image-block {
+  /* background-color: green; */
+  /* border: 2px solid red; */
+  text-align: center;
+}
+
+h3 {
+  font-family: "italianno", cursive;
+  color: #7C0A83;
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+@keyframes shake {
+  0% {
+    transform: skewX(-15deg);
   }
-
-  .block-container{
-    display: grid;
-    grid-template-columns: 250px 250px;
-    grid-template-rows: repeat(2, 350px);
-    
+  5% {
+    transform: skewX(15deg);
   }
+  10% {
+    transform: skewX(-15deg);
+  }
+  15% {
+    transform: skewX(15deg);
+  }
+  20% {
+    transform: skewX(0deg);
+  }
+  100% {
+    transform: skewX(0deg);
+  }
+}
 
-  main img {
-    
-    width: 70%;
-    height: auto;
-    background-color: red;
+main {
+  padding: 1em 1em;
+  max-width: 50em;
+  margin: auto;
+}
+
+main p {
+  font-family: "Playfair Display";
+  font-size: 20px;
+  color: #212221;
+  line-height: 120%;
+  padding: 1em;
+  margin-top: -60px;
+}
+
+main .first-letter {
+  font-family: 'Almendra SC', serif;
+  font-size: 27px;
+}
+
+main h3 {
+  color: #0099CA;
+  font-size: xx-large;
+  font-weight: bolder;
+  font-family: cursive;
+}
+
+.description {
+  max-width: 50em;
+  margin: auto;
+}
+
+.description h1 {
+  font-family: 'Italianno', cursive;
+  font-size: 80px;
+  font-weight: bolder;
+  text-align: center;
+  font-weight: bolder;
+  color: #7C0A83;
+}
+
+h2 {
+  font-family: "italianno", cursive;
+  font-size: 50px;
+  color: #7C0A83;
+  text-align: center;
+}
+
+.description p {
+  /*welcome to sg-lips*/
+  font-family: 'Nunito', sans-serif;
+  font-size: 23px;
+  text-align: center;
+  padding: 1em;
+  color: #3C3C3C;
+}
+
+.first-letter {
+  font-size: 42px;
+  font-family: 'Almendra SC', serif;
+  font-weight: bold;
+}
+
+.floral-divider {
+  background-image: url("separator1.png");
+  height: 35px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.logo {
+  border-radius: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  padding-top: 35px;
+}
+
+#circle {
+  background: #f1f1f1;
+  border-radius: 50%;
+  width: 220px;
+  height: 220px;
+}
+
+.logo-banner {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  justify-items: center;
+  margin-bottom: 10px;
+}
+
+.logo-container {
+  padding-left: 50px;
+  padding-top: 60px;
+}
+
+.logo-text {
+  padding-top: 20px;
+  padding-right: 50px;
+  padding-left: 10px;
+}
+
+footer {
+  padding: 1em 1em;
+  background-color: #fcb7c0;
   
-  }
-
-  a :hover{
-    color: #d669c0;
-    animation: .8s shake infinite alternate;
-  }
-
-  .image-block{
-    background-color: green;
-    border: 2px solid red;
-    
-    text-align: center;
-  }
-  
-
-  h3{
-      font-family: cursive;
-      color: #d669c0;
-      font-size: 30px;
-      text-align: center;
-      font-weight: bold;  
-      margin-bottom: -25px;
-      margin-top: 15px;
-       
-  }
-  @keyframes shake {
-    0% { transform: skewX(-15deg); }
-    5% { transform: skewX(15deg); }
-    10% { transform: skewX(-15deg); }
-    15% { transform: skewX(15deg); }
-    20% { transform: skewX(0deg); }
-    100% { transform: skewX(0deg); }  
-  }
-
-  main p{
-      font-family: "Playfair Display";
-      font-size: 20px;
-      color: #212221;
-      line-height: 120%;
-      padding: 20px;
-  }
-
-  main .first-letter{
-    font-family: 'Almendra SC', serif;
-    font-size: 27px;
-  }
-
-  .description h1{
-      font-family: cursive;
-      font-weight: bolder;
-      text-align: center;
-      line-height: 40px;
-      font-weight: bolder; 
-      color: #e05ec8;  
-  }
-
-  h2{
-    font-family: cursive;
-    font-size: 50px;
-    color: #d669c0;
-    
-    text-align: center;
-  }
-
-  .description p{ /*welcome to sg-lips*/
-      font-family: 'Playfair Display', Serif;
-      font-size: 30px;
-      text-align: center;
-      padding: 10px;
-      color: #510045;
-      
-  }
-
-  .first-letter{
-      font-size: 42px;
-      font-family: 'Almendra SC', serif;
-      font-weight: bold;
-  }
-
-.separator {
-    width: 450px;
-    height: 200px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    
-} 
-.description img{
-    
-    border-radius: 20px;
-    float: left;
 }
 
-.logo-container{ /*SUGAR-LIPS logo*/
-    padding: 20px;
+h4 {
+  font-family: 'Italianno', cursive;
+  font-size: 55px;
+  color: #7C0A83;
+  font-weight: bold;
+  margin-bottom: -20px;
+  padding: 0em 1em;
+  text-align: center;
+  margin-top: 0.3em;
 }
 
-footer{
-  padding: 10px;
+footer ul {
+  font-family: "Playfair Display";
+  font-size: 25px;
+  color: #3C3C3C;
+  text-align: center;
+  list-style-type: none;
 }
 
-h4{
-    font-family: "Playfair Display";
-    font-size: 27px;
-    color: #d669c0;
+.social-media a {
+  color: #3C3C3C;
 }
-
- footer ul{
-    font-family: "Playfair Display";
-    font-size: 25px; 
-    color: #510045; 
-}
-
-.social-media a{
-  color: black;
-}
-
-.fa{
-    margin-right: 20px;
-}
-
 
 /*Gallery css*/
 
-*{box-sizing: border-box}
+* {
+  box-sizing: border-box
+}
 
 /* Slideshow container */
+
 .slideshow-container {
   width: 80%;
   position: relative;
   margin: auto;
+  margin-top: 20px;
+  border: 2px solid #7C0A83;
 }
 
 /* Hide the images by default */
+
 .mySlides {
   display: none;
   text-align: center;
@@ -243,14 +329,14 @@ h4{
 }
 
 /* Next & previous buttons */
+
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 55%;
+  top: 28%;
   width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
+  padding: 20px;
+  color: black;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -259,35 +345,42 @@ h4{
 }
 
 /* Position the "next button" to the right */
+
 .next {
-  
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
+
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Caption text */
+
 .text {
   color: #382c2c;
-  font-size: 35px;
   padding: 8px 12px;
   position: absolute;
-  top: 25%;
+  top: 2%;
   width: auto;
   text-align: center;
 }
 
-.text h3{
-  font-size: xx-large;
-  font-weight: bolder ;
-  color: #b88b4a;
+.text h3 {
+  font-size: 60px;
+  margin-bottom: -55px;
+}
+
+.text p {
+  font-size: 24px;
+  margin-bottom: 180px;
+  margin-top: 60px;
 }
 
 /* Number text (1/3 etc) */
+
 .numbertext {
   color: #704a4a;
   font-size: 12px;
@@ -296,12 +389,13 @@ h4{
   top: 2%;
 }
 
-.dot-container{
+.dot-container {
   text-align: center;
   padding: 20px;
 }
 
 /* The dots/bullets/indicators */
+
 .dot {
   cursor: pointer;
   height: 15px;
@@ -318,6 +412,7 @@ h4{
 }
 
 /* Fading animation */
+
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
@@ -326,30 +421,35 @@ h4{
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+  from {
+    opacity: .4
+  }
+  to {
+    opacity: 1
+  }
 }
 
 @keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+  from {
+    opacity: .4
+  }
+  to {
+    opacity: 1
+  }
 }
 
-.tips h5{
+.tips h5 {
   font-family: "Playfair Display" !important;
-  font-size:20px !important;
+  font-size: 20px !important;
 }
 
-.tips{
+.tips {
   border: 2px solid black;
-  padding: 20px;
+  margin-right: 1.5em;
+  margin-left: 1.5em;
   margin-top: 30px;
+  padding: 20px;
 }
-
-#title h2{
-    font-family: 'Playfair Display', Serif !important; 
-}
-
 
 /*gallery-cake*/
 
@@ -357,6 +457,7 @@ h4{
   width: auto;
   overflow-x: scroll;
   white-space: nowrap;
+  padding: 0em 1em;
 }
 
 .slide {
@@ -367,31 +468,38 @@ h4{
   padding: 5px;
 }
 
-h5{
+h5 {
   font-size: 20px;
   font-family: cursive;
 }
 
 /*ORDER CSS*/
 
-*{
+* {
   box-sizing: border-box;
 }
 
-.container{
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-  text-align: center;
-  font-size: 20px;
-  border: solid 3px #d669c0;
+.break {
+  display: none;
 }
 
-.ui-timepicker{
+.container {
+  /*form*/
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  text-align: center;
+  font-size: 20px;
+  border: solid 3px #7C0A83;
+}
+
+.ui-timepicker {
   font-size: 10px !important;
 }
 
-input[type=submit]{
+input[type=submit] {
   background-color: #d669c0;
   padding: 12px 20px;
   border-radius: 4px;
@@ -399,68 +507,216 @@ input[type=submit]{
   font-size: 17px;
 }
 
-input[type=submit]:hover{
+input[type=submit]:hover {
   background-color: #ffbeef;
 }
 
-input[type=text] , select, textarea, [type=number]{
+input[type=text], select, textarea, [type=number] {
   padding: 7px;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
 
-
-label{
+label {
   padding: 10px 12px;
   display: inline-block;
 }
 
-select{
+select {
   font-size: 16px;
 }
 
-.logo-banner {
-  background: rgb(241, 241, 241);
-  padding: 3%;
-  border: 8px solid #ffbeef;
+.guide {
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+
+.guide-container {
+  float:right;
+}
+
+.shop-header {
+  /* background-color: red; */
+  min-height: 310px;
+  background-image: url("cakeshop-top.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.shop-left {
+  /* background-color: green; */
+  width: 72px;
+  display: table-cell;
+  background-image: url("pole.png");
+  background-size: 24px;
+  background-repeat: repeat-y;
+  background-position: right;
+}
+
+.shop-right {
+  /* background-color: brown; */
+  width: 132px;
+  display: table-cell;
+  background-image: url("pole.png");
+  background-size: 24px;
+  background-repeat: repeat-y;
+  background-position: left;
+}
+
+.shop-middle {
+  /* background-color: blue; */
+  width: 100%;
+  display: table;
+}
+
+.shop-contents {
+  background-color: pink;
+  width: auto;
+  height: 200px;
+  display: table-cell;
+}
+
+.shop-footer {
+  /* background: yellow; */
+  height: 110px;
+  background-image: url("cakeshop-bottom.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.myshop
+/*** Your CSS code ***/
+
+/*** Your CSS code ***/
+
+  {
+  border-style: solid;
+  border-width: 258px 40px 123px 40px;
+  -moz-border-image: url(myshop.png) 694 102 295 102 round repeat;
+  -webkit-border-image: url(myshop.png) 694 102 295 102 round repeat;
+  -o-border-image: url(myshop.png) 694 102 295 102 round repeat;
+  border-image: url(myshop.png) 694 102 295 102 round repeat;
+}
+
+/* MEDIA QUERY */
+@media screen and  (max-width: 800px) {
+  .description h1 {
+    font-size: 50px;
+  }
+  .logo-text {
+    padding-top: 20px;
+    padding-right: 5px;
+  }
+  .logo {
+    width: 65%;
+    padding-top: 12px;
+  }
+  #circle {
+    width: 110px;
+    height: 110px;
+  }
+  h2 {
+    font-size: 38px;
+    padding: 0em 0.2em;
+    letter-spacing: -1px;
+  }
+  .shop {
+    background-image: none;
+    padding-top: 10%;
+    padding-bottom: 5%;
+  }
+  .block-container {
+    display: block;
+  }
+  .services h2 {
+    display: inline-block;
+    width: 100%;
+    font-size: 60px;
+  }
+  h4 {
+    font-size: 40px;
+  }
+  footer ul {
+    font-size: 20px;
+    color: #3C3C3C;
+    padding: 1em;
+  }
+  .text {
+    top: 0.1%;
+  }
+  .text h3 {
+    font-size: 32px;
+    margin-bottom: -65px;
+    font-weight: bolder;
+  }
+  .text p {
+    font-size: 14px;
+  }
+  .header-container img {
+    display: none;
+  }
+  .break {
+    display: inline-block;
+  }
 }
 
 
+@media screen and (min-width: 800px) {
 
-@media screen and (min-width: 600px) {
+  footer {
+    padding-bottom: 5em;
+  }
+
   h1 {
     font-size: 65px;
     color: #ec91d8;
   }
 
+  h2.services  {
+    display: none;
+  }
+
+  .footer-block {
+    display: inline-block;
+    width: 50%;
+  }
+
+  .to-right-lg {
+    float:right;
+  }
   
-
-}
-
-@media screen and (max-width: 600px) {
-  h1 {
-    font-size: 32px;
-    color: #ec91d8;
+  .to-left-lg {
+    float: left;
   }
 
-  .logo-container img {
-    height: 140px;
+  footer {
+    float: left;
+    width: 100%;
   }
-
 }
 
-@media screen and (max-width: 950px) {
-  .mySlides .text { 
+@media screen and  (max-width: 400px) {
+  .mySlides .text {
     font-size: 10px;
+    font-weight: bolder;
+  }
+}
+@media screen and  (min-width:401px) and (max-width: 650px) {
+  .text p {
+    font-size: 25px;
+  }
+  .text h3{
+    font-size: 55px;
+    padding-bottom: 5px;
   }
 }
 
-.guide{
-  float: right;
-  margin-bottom: 5px;
-  margin-right: 5px;
+@media screen and  (min-width:651px) and (max-width: 800px) {
+  .text p {
+    font-size: 25px;
+  }
+  .text h3{
+    font-size: 55px;
+    padding-bottom: 30px;
+  }
 }
-
-
-
-

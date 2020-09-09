@@ -8,6 +8,8 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,700i|Source+Sans+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Nunito:wght@300&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lora|Roboto:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Almendra+SC&display=swap" rel="stylesheet">
 
@@ -17,37 +19,42 @@
 <body>
     <header>
         <a id="top"></a>
-        <div class="navbar">
-            <a href="#home">Home</a>
-            <a class="pagelink" href="#about">About Us</a>
-            <div class="subnav">
-                <button class="subnavbtn">Our Services <i class="fa fa-caret-down"></i></button>
-                <div class="subnav-content">
-                    <a href="gallery.html">Cakes</a>
-                    <a href="gallery.html">Cupcakes</a>
-                    <a href="gallery.html">Our Flavors</a>
+        <div class="nav-container">
+            <div class="navbar">
+                <a class="pagelink" href="#about">About Us</a>
+                <div class="subnav">
+                    <button class="subnavbtn">Our Services <i class="fa fa-caret-down"></i></button>
+                    <div class="subnav-content">
+                        <a href="gallery.html">Cakes</a>
+                        <a href="gallery.html">Cupcakes</a>
+                        <a href="gallery.html">Our Flavors</a>
+                    </div>
                 </div>
+                <a href="order.html">Place Your Order</a>
+                <a class="pagelink" href="#contact">Contact Us</a>
             </div>
-            <a href="order.html">Place Your Order</a>
-            <a class="pagelink" href="#contact">Contact Us</a>
         </div>
+        <div class="candy-pole"></div>
 
         <div class="description">
             <div class="logo-banner">
                 <div class="logo-container">
-                    <img src="sugarlips-logo.jpg" />
+                    <div id="circle">
+                        <img src="sugarlips-logo.jpeg"  class="logo">
+                    </div>
                 </div>
                 <div class="logo-text">
-                    <h1>Sugar Lips</h1>
-                    <h1>Cups n' Cakes</h1>
+                    <h1>Sugar Lips<br> Cups n' Cakes</h1>
                 </div>
             </div>
 
+            <div class="floral-divider"></div>
 
             <div id="about">
+
                 <div class="intro-note">
-                    <h2>&#9829 Sweets Made With Love &#9829</h2>
-                    <p><span class="first-letter">W</span>elcome to Sugar Lips!
+                    <h2>&#9829; Sweets Made With Love &#9829;</h2>
+                    <p><span class="first-letter">W</span>elcome to Sugar Lips!<br>
                         We bake cakes and cupcakes that taste as good as they look.
                         We take custom orders for a wide variety of events and craft each cake
                         and cupcake with you and your special event in mind!
@@ -58,21 +65,43 @@
 
     </header>
 
-    <img src="separator1.png" class="separator" />
-    <div class="guide">
-        <a href="#top">Top of the page &#x21e7;</a>
+    <div class="floral-divider"></div>
+    <div class="guide-container">
+        <div class="guide">
+            <a href="#top">Top of the page &#x21e7;</a>
+        </div>
     </div>
 
     <main>
+
+        <!-- <div class="shop-header"></div>
+        <div class="shop-middle">
+            <div class="shop-left"></div>
+            <div class="shop-contents">
+            
+            </div>
+            <div class="shop-right"></div>
+        </div>
+        <div class="shop-footer"></div> -->
+
+
         <div class="shop">
+            <h2 class="services">Our Services</h2>
             <div class="block-container">
                 <div class="image-block cakes">
                     <img src="cake.png" />
                     <a href="gallery.html" style="text-decoration: none;">
                         <h3>Cakes</h3>
                     </a>
-                    <p><span class="first-letter">H</span>ave a look at some of our custom made cake designs for different
-                        occasions.</p>
+                    <p><span class="first-letter">H</span>ave a look at some of our custom made cake designs.</p>
+                </div>
+
+                <div class="image-block cupcake">
+                    <img src="cupcake.png" />
+                    <a href="gallery.html" style="text-decoration: none;">
+                        <h3>Cupcakes</h3>
+                    </a>
+                    <p><span class="first-letter">S</span>ome cupcakes from our collection for different occasions.</p>
                 </div>
                 <div class="image-block flavors">
                     <img src="flavours.png" />
@@ -80,13 +109,6 @@
                         <h3>Flavors</h3>
                     </a>
                     <p><span class="first-letter">M</span>atch your taste with our flavor guide.</p>
-                </div>
-                <div class="image-block cupcake">
-                    <img src="cupcake.png" />
-                    <a href="gallery.html" style="text-decoration: none;">
-                        <h3>Cupcakes</h3>
-                    </a>
-                    <p><span class="first-letter">S</span>ome cupcakes from our collection for different occasions.</p>
                 </div>
                 <div class="image-block order">
                     <img src="cart.png" />
@@ -98,37 +120,38 @@
 
             </div>
         </div>
-        
+
     </main>
-
-    <img src="separator1.png" class="separator" />
-
+    
+    <div class="guide-container">
+        <div class="guide">
+            <a href="#top">Top of the page &#x21e7;</a>
+        </div>
+    </div>
     <footer>
-        <div id="contact"></div>
-        <div class="social-media">
+
+        <div class="social-media footer-block to-left-lg">
             <h4>Follow us</h4>
             <ul>
                 <li><i class="fa fa-facebook-square fa-lg"></i>
                     <a href="https://www.facebook.com/SugarLipsCups/">fb.me/sugarlipscups</a></li>
                 <li><i class="fa fa-instagram fa-lg"></i>
-                    <a
-                        href="https://instagram.com/sugarlipscupsncakes?igshid=9jgvrep34cis">instagram.com/sugarlipscupsncakes</a>
+                    <a href="https://instagram.com/sugarlipscupsncakes?igshid=9jgvrep34cis">bit.ly/cupsncakes</a>
                 </li>
             </ul>
         </div>
-        <div class="contact-us">
+        <div class="contact-us footer-block to-right-lg">
             <h4>Contact us</h4>
             <ul>
                 <li><i class="fa fa-mobile fa-lg"></i>+46 70000000</li>
                 <li><i class="fa fa-envelope"></i>info@sugarlips.se</li>
             </ul>
         </div>
-        </div>
 
-        <div class="guide">
-            <a href="#top">Top of the page &#x21e7;</a>
-        </div>
     </footer>
+
+
+
 
 </body>
 

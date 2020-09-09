@@ -95,7 +95,7 @@
 body {
   background-color: #FFC8CF;
   font-family: "Playfair Display";
-  color: #3C3C3C;
+  color: #3d143f;
   margin: auto;
 }
 
@@ -109,7 +109,7 @@ body {
 }
 
 .shop p {
-  color: #3C3C3C
+  color: #3d143f;
 }
 
 .services h2 {
@@ -135,8 +135,6 @@ a :hover {
 }
 
 .image-block {
-  /* background-color: green; */
-  /* border: 2px solid red; */
   text-align: center;
 }
 
@@ -224,13 +222,17 @@ h2 {
   font-size: 23px;
   text-align: center;
   padding: 1em;
-  color: #3C3C3C;
+  color: #3d143f;
 }
 
 .first-letter {
   font-size: 42px;
   font-family: 'Almendra SC', serif;
   font-weight: bold;
+}
+
+.heart {
+  font-size: 45%;
 }
 
 .floral-divider {
@@ -278,7 +280,6 @@ h2 {
 footer {
   padding: 1em 1em;
   background-color: #fcb7c0;
-  
 }
 
 h4 {
@@ -295,13 +296,13 @@ h4 {
 footer ul {
   font-family: "Playfair Display";
   font-size: 25px;
-  color: #3C3C3C;
+  color: #3d143f;
   text-align: center;
   list-style-type: none;
 }
 
 .social-media a {
-  color: #3C3C3C;
+  color: #3d143f;
 }
 
 /*Gallery css*/
@@ -532,7 +533,7 @@ select {
 }
 
 .guide-container {
-  float:right;
+  float: right;
 }
 
 .shop-header {
@@ -599,9 +600,13 @@ select {
 }
 
 /* MEDIA QUERY */
-@media screen and  (max-width: 800px) {
+
+@media screen and (max-width: 800px) {
   .description h1 {
     font-size: 50px;
+  }
+  .description p {
+    font-size: 20px;
   }
   .logo-text {
     padding-top: 20px;
@@ -638,7 +643,6 @@ select {
   }
   footer ul {
     font-size: 20px;
-    color: #3C3C3C;
     padding: 1em;
   }
   .text {
@@ -660,63 +664,189 @@ select {
   }
 }
 
-
 @media screen and (min-width: 800px) {
-
   footer {
     padding-bottom: 5em;
   }
-
   h1 {
     font-size: 65px;
     color: #ec91d8;
   }
-
-  h2.services  {
+  h2.services {
     display: none;
   }
-
   .footer-block {
     display: inline-block;
     width: 50%;
   }
-
   .to-right-lg {
-    float:right;
+    float: right;
   }
-  
   .to-left-lg {
     float: left;
   }
-
   footer {
     float: left;
     width: 100%;
   }
-}
-
-@media screen and  (max-width: 400px) {
-  .mySlides .text {
-    font-size: 10px;
-    font-weight: bolder;
+  .text h3 {
+    font-size: 30px;
   }
-}
-@media screen and  (min-width:401px) and (max-width: 650px) {
+  .text p {
+    font-size: 11px;
+  }
   .text p {
     font-size: 25px;
   }
-  .text h3{
-    font-size: 55px;
-    padding-bottom: 5px;
-  }
-}
-
-@media screen and  (min-width:651px) and (max-width: 800px) {
-  .text p {
-    font-size: 25px;
-  }
-  .text h3{
+  .text h3 {
     font-size: 55px;
     padding-bottom: 30px;
   }
 }
+
+
+
+/*mobile portrait(320x480)*/
+
+@media screen and (max-width: 350px) {
+  .mySlides .text {
+    font-size: 10px;
+    font-weight: bolder;
+  }
+  .prev, .next {
+    top: 40%;
+  }
+  .text h3 {
+    font-size: 30px;
+  }
+  .text p {
+    font-size: 11px;
+  }
+  h2 {
+    font-size: 37px;
+  }
+  .description h1 {
+    font-size: 50px;
+  }
+  .logo {
+    width: 62%;
+  }
+  #circle {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media screen and (min-width:500px) and (max-width:600px) {
+  .slideshow-container {
+    width: 80%;
+  }
+  .text p {
+    font-size: 20px;
+  }
+  .text h3 {
+    font-size: 40px;
+  }
+  .description h1 {
+    font-size: 65px;
+  }
+  .logo {
+    width: 65%;
+    padding-top: 15px;
+  }
+  #circle {
+    width: 160px;
+    height: 160px;
+  }
+}
+
+@media screen and (min-width:600px) and (max-width:800px) {
+  .slideshow-container {
+    width: 70%;
+  }
+  .text p {
+    font-size: 22px;
+  }
+  .text h3 {
+    font-size: 45px;
+  }
+  .description h1 {
+    font-size: 75px;
+  }
+  .logo {
+    width: 65%;
+    padding-top: 25px;
+  }
+  #circle {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media screen and (min-width:800px) and (max-width:900px) {
+  .slideshow-container {
+    width: 60%;
+  }
+  .text p {
+    font-size: 20px;
+  }
+  .text h3 {
+    font-size: 45px;
+
+  }
+}
+
+@media screen and (min-width:900px) and (max-width:1000px) {
+  .slideshow-container {
+    width: 55%;
+  }
+  .text p {
+    font-size: 22px;
+  }
+  .text h3 {
+    font-size: 50px;
+
+  }
+}
+
+@media screen and (min-width:1000px) {
+  .slideshow-container {
+    width: 50%;
+  }
+  .text p {
+    font-size: 23px;
+  }
+  .text h3 {
+    font-size: 55px;
+
+  }
+}
+
+@media screen and (min-width:1200px)  {
+  .slideshow-container {
+    width: 50%;
+  }
+  .text p {
+    font-size: 28px;
+  }
+  .text h3 {
+    font-size: 60px;
+
+  }
+}
+
+/*NAVBAR
+@media screen and (max-width:600px){
+  .navbar {
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .nav-container {
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
+    height: 500px;
+    border-radius: 10px;
+  }
+}*/
